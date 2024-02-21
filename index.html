@@ -63,16 +63,24 @@
                     <span>contact@freeworldkids.com</span>
                 </a>
                 <div class="header__group">
-                    <a class="header__phone" href="tel:7(909)4333930">+7(909) 433-39-30</a>
-                    <button class="header__btn btn">
+                    <a class="header__phone" href="tel:7(909)4333930" >+7(909) 433-39-30</a>
+                    <a href="#popup-call" class="header__btn btn" data-fancybox="popup-call">
                         <span>Обратный звонок</span>
-                    </button>
+                    </a>
                 </div>
             </div>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="header__mob">
+                <div class="header__group">
+                    <a class="header__phone" href="tel:7(909)4333930" >+7(909) 433-39-30</a>
+                    <a href="#popup-call" class="header__btn btn" data-fancybox="popup-call">
+                        <span>Обратный звонок</span>
+                    </a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
@@ -92,9 +100,9 @@
 									<img src="img/arrow.svg" alt="">
 								</div>
 							</div>
-							<button class="main-section__btn btn btn-pink">
+							<a href="#order" class="main-section__btn btn btn-pink" data-fancybox="order">
 								<span>первое занятие бесплатно</span>
-							</button>
+							</a>
 						</div>
 						<div class="main-section__items left-anim _anim-items anim-no-hide">
 							<div class="main-section__img">
@@ -468,9 +476,11 @@
 								</div>
 							</div>
 						</div>
-						<button class="services__btn btn btn-pink">
-							<span>первое занятие бесплатно</span>
-						</button>
+						<div class="services__bottom">
+							<a href="#order" class="services__btn btn btn-pink" data-fancybox="order">
+								<span>первое занятие бесплатно</span>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="services__img">
@@ -503,9 +513,9 @@
 										<div class="info2-card__text">Наш метод «любить и дружить» позволяет раскрыть ребенка как личность и помогает ему реализоваться в дальнейшем.</div>
 									</div>
 								</div>
-								<button class="info2-card__btn btn btn-pink">
+								<a href="#order" class="info2-card__btn btn btn-pink" data-fancybox="order">
 									<span>первое занятие бесплатно</span>
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -675,9 +685,9 @@
 											<label>арабский</label>
 										</div>
 									</div>
-									<button class="price-card__btn btn btn-pink">
+									<a href="#order" class="price-card__btn btn btn-pink" data-fancybox="order">
 										<span>попробовать бесплатно</span>
-									</button>
+									</a>
 								</div>
 								<div data-content-path="3" class="price-card__tabs">
 									<div data-tab-path="1" class="price-card__tab price-card__tab--active">
@@ -741,9 +751,9 @@
 											<label>арабский</label>
 										</div>
 									</div>
-									<button class="price-card__btn btn btn-pink">
+									<a href="#order" class="price-card__btn btn btn-pink" data-fancybox="order">
 										<span>попробовать бесплатно</span>
-									</button>
+									</a>
 								</div>
 								<div class="price-card__tabs">
 									<div data-tab-path="1" class="price-card__tab price-card__tab--active">
@@ -922,7 +932,7 @@
 											<span>читать полностью</span>
 											<span>Скрыть</span>
 										</div>
-										<a class="feedback-card__link2" href="">видеоотзыв</a>
+										<a class="feedback-card__link2" href="#video" data-fancybox="video">видеоотзыв</a>
 									</div>
 								</div>
 								<div class="feedback-card">
@@ -992,7 +1002,7 @@
 											<span>читать полностью</span>
 											<span>Скрыть</span>
 										</div>
-										<a class="feedback-card__link2" href="">видеоотзыв</a>
+										<a class="feedback-card__link2" href="#video" data-fancybox="video">видеоотзыв</a>
 									</div>
 								</div>
 								<div class="feedback-card">
@@ -1155,9 +1165,9 @@
                 <div class="footer__wrap">
                     <div class="footer__group2">
                         <a class="footer__phone" href="tel:7(909)4333930">+7(909) 433-39-30</a>
-                        <button class="footer__btn btn">
+                        <a href="#popup-call" class="footer__btn btn" data-fancybox="popup-call">
                             <span>Обратный звонок</span>
-                        </button>
+                        </a>
                     </div>
                     <div class="footer__email-wrap">
                         <div class="footer__email-title">E-mail:</div>
@@ -1176,6 +1186,13 @@
 	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
 <script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
 <script src="js/main.min.js"></script>
+
+
+	<div id="video" class="video-feedback">
+		<div class="video-feedback__wrap">
+			<iframe src="https://www.youtube.com/embed/c9DIoSNoQNs?si=WhPBD5RZMDLExtUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
 
 	<script>
 		const displayWindowSize = () => {
