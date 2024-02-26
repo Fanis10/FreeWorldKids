@@ -64,7 +64,7 @@
                 </a>
                 <div class="header__group">
                     <a class="header__phone" href="tel:7(909)4333930" >+7(909) 433-39-30</a>
-                    <a href="#popup-call" class="header__btn btn" data-fancybox="popup-call">
+                    <a href="" class="header__btn btn" data-fancybox data-src="#popup-call">
                         <span>Обратный звонок</span>
                     </a>
                 </div>
@@ -100,9 +100,9 @@
 									<img src="img/arrow.svg" alt="">
 								</div>
 							</div>
-							<a href="#order" class="main-section__btn btn btn-pink" data-fancybox="order">
+							<button class="main-section__btn btn btn-pink" data-fancybox data-src="#order">
 								<span>первое занятие бесплатно</span>
-							</a>
+							</button>
 						</div>
 						<div class="main-section__items left-anim _anim-items anim-no-hide">
 							<div class="main-section__img">
@@ -477,9 +477,9 @@
 							</div>
 						</div>
 						<div class="services__bottom">
-							<a href="#order" class="services__btn btn btn-pink" data-fancybox="order">
+							<button class="services__btn btn btn-pink" data-fancybox data-src="#order">
 								<span>первое занятие бесплатно</span>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -513,9 +513,9 @@
 										<div class="info2-card__text">Наш метод «любить и дружить» позволяет раскрыть ребенка как личность и помогает ему реализоваться в дальнейшем.</div>
 									</div>
 								</div>
-								<a href="#order" class="info2-card__btn btn btn-pink" data-fancybox="order">
+								<button class="info2-card__btn btn btn-pink" data-fancybox data-src="#order">
 									<span>первое занятие бесплатно</span>
-								</a>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -685,9 +685,9 @@
 											<label>арабский</label>
 										</div>
 									</div>
-									<a href="#order" class="price-card__btn btn btn-pink" data-fancybox="order">
+									<button class="price-card__btn btn btn-pink" data-fancybox data-src="#order">
 										<span>попробовать бесплатно</span>
-									</a>
+									</button>
 								</div>
 								<div data-content-path="3" class="price-card__tabs">
 									<div data-tab-path="1" class="price-card__tab price-card__tab--active">
@@ -751,9 +751,9 @@
 											<label>арабский</label>
 										</div>
 									</div>
-									<a href="#order" class="price-card__btn btn btn-pink" data-fancybox="order">
+									<button class="price-card__btn btn btn-pink" data-fancybox data-src="#order">
 										<span>попробовать бесплатно</span>
-									</a>
+									</button>
 								</div>
 								<div class="price-card__tabs">
 									<div data-tab-path="1" class="price-card__tab price-card__tab--active">
@@ -1191,6 +1191,61 @@
 	<div id="video" class="video-feedback">
 		<div class="video-feedback__wrap">
 			<iframe src="https://www.youtube.com/embed/c9DIoSNoQNs?si=WhPBD5RZMDLExtUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="popups">
+		<div id="popup-call" class="popup">
+			<div class="form">
+				<div class="form-head">
+					<div class="form-title">Обратная связь</div>
+				</div>
+				<form method="POST" action="" class="form_block">
+					<div class="form-field form-group">
+						<input type="tel" name="phone" placeholder="Ваш телефон" class="form-control required  inp" />
+					</div>
+					<button type="submit" name="send" class="form-btn btn btn-pink">
+						<span>Отправить</span>
+					</button>
+					<div class="agreement-check">
+						<input class="agreement" type="checkbox" checked="checked" name="Agreement">
+						<label class="agreement-label">
+							Я даю своё согласие на обработку персонадльных данных и соглашаюсь  с
+							<a href="">политикой конфиденциальности</a>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popups">
+		<div id="order" class="popup">
+			<div class="form">
+				<div class="form-head">
+					<div class="form-title">Запишитесь на обучение</div>
+				</div>
+				<form method="POST" action="" class="form_block">
+					<div class="form-field form-group">
+						<input type="text" name="name1" placeholder="Ваше имя" class="form-control" />
+					</div>
+					<div class="form-field form-group">
+						<input type="text" name="name1" placeholder="Имя ребёнка" class="form-control" />
+					</div>
+					<div class="form-field form-group">
+						<input type="tel" name="phone" placeholder="Ваш телефон" class="form-control required  inp" />
+					</div>
+					<button type="submit" name="send" class="form-btn btn btn-pink">
+						<span>Отправить</span>
+					</button>
+					<div class="agreement-check">
+						<input class="agreement" type="checkbox" checked="checked" name="Agreement">
+						<label class="agreement-label">
+							Я даю своё согласие на обработку персонадльных данных и соглашаюсь  с
+							<a href="">политикой конфиденциальности</a>
+						</label>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 
